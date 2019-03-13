@@ -1,0 +1,9 @@
+[Unit]
+Description=Calls myreboot.sh script to shutdown in 5 minutes
+
+[Service]
+Type=oneshot
+User=root
+ExecStart=/bin/shutdown -r +5
+
+
